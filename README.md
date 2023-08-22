@@ -21,7 +21,8 @@ The dataset used in this project is sourced from Hugging Face's Tashkeela Clean 
 ## Model 
 The structure of the baseline model. It consists of an embedding layer of 64 dimensions, followed by two bidirectional LSTM layers, each consisting of 64 cells, then a fully connected layer to project to the output size, and lastly, a softmax layer to output the probability for each diacritic.
 
-### model_link :  https://drive.google.com/drive/folders/1L6S9xRWWFoBgBI5ECe-pF6twgR9LePhZ?usp=sharing
+### Model : [Model_Link](https://drive.google.com/drive/folders/1L6S9xRWWFoBgBI5ECe-pF6twgR9LePhZ?usp=sharing)
+
 
 ## Authors
 #### This project was created by:
