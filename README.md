@@ -13,6 +13,7 @@ The Tashkeel project involves the following main components:
 
 ## Demo
 #### Tashkeel video ---> israa
+![WhatsApp Image 2023-08-23 at 05 04 42](https://github.com/radwaayman22/Tashkeel_Graduation_Project_ITI_9_Month_Intake43/assets/47259697/44b0b924-0118-4de3-a755-f7e1e14bea7e)
 
 ## Dataset
 
