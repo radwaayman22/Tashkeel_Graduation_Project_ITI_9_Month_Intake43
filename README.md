@@ -19,6 +19,10 @@ The Tashkeel project involves the following main components:
 
 The dataset used in this project is sourced from Hugging Face's Tashkeela Clean Version, which provides high-quality Arabic text with diacritics. You can find the dataset at the following link: [Tashkeela Clean Version Dataset](https://huggingface.co/datasets/arbml/tashkeelav2).
 
+
+https://github.com/radwaayman22/Tashkeel_Graduation_Project_ITI_9_Month_Intake43/assets/47259697/d4c66607-dafe-4b01-8646-c25c14a763e0
+
+
 ## Model 
 The structure of the baseline model. It consists of an embedding layer of 64 dimensions, followed by two bidirectional LSTM layers, each consisting of 64 cells, then a fully connected layer to project to the output size, and lastly, a softmax layer to output the probability for each diacritic.
 
