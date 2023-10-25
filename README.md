@@ -12,15 +12,14 @@ The Tashkeel project involves the following main components:
 
 
 ## Demo
-#### Tashkeel video ---> israa
-![WhatsApp Image 2023-08-23 at 05 04 42](https://github.com/radwaayman22/Tashkeel_Graduation_Project_ITI_9_Month_Intake43/assets/47259697/44b0b924-0118-4de3-a755-f7e1e14bea7e)
+https://github.com/radwaayman22/Tashkeel_Graduation_Project_ITI_9_Month_Intake43/assets/47259697/d4c66607-dafe-4b01-8646-c25c14a763e0
+
 
 ## Dataset
 
 The dataset used in this project is sourced from Hugging Face's Tashkeela Clean Version, which provides high-quality Arabic text with diacritics. You can find the dataset at the following link: [Tashkeela Clean Version Dataset](https://huggingface.co/datasets/arbml/tashkeelav2).
 
 
-https://github.com/radwaayman22/Tashkeel_Graduation_Project_ITI_9_Month_Intake43/assets/47259697/d4c66607-dafe-4b01-8646-c25c14a763e0
 
 
 ## Model 
