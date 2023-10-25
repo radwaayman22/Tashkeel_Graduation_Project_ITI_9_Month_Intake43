@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>تشكيل النصوص العربية</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #333;
+        color: #f2f2f2;
+      }
+
+      /* Form styles */
+      form {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Dark mode form styles */
+      body.dark-mode form {
+        border-color: #f2f2f2;
+        background-color: #333;
+        color: #f2f2f2;
+      }
+
+      /* Input styles */
+      input[type="submit"] {
+        background-color: #755E68;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      /* Dark mode input styles */
+      body.dark-mode input[type="submit"] {
+        background-color: #f2f2f2;
+        color: #333;
+      }
+
+      /* Toggle button styles */
+      .toggle-button {
+        background-color: #755E68;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      /* Dark mode toggle button styles */
+      body.dark-mode .toggle-button {
+        background-color: #f2f2f2;
+        color: #333;
+      }
+
+      /* Textarea styles */
+      textarea {
+        width: 300px;
+        height: 100px;
+        resize: none;
+      }
+
+      /* Dark mode textarea styles */
+      body.dark-mode textarea {
+        background-color: #333;
+        color:#f2f2f2;
+      }
+
+      /* Error message styles */
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body id="body-tag">
+    <h1>تشكيل النصوص العربية</h1>
+    <button id="mode-toggle" class="toggle-button" onclick="toggleDarkMode()">الوضع الليلي</button>
+    <form method="POST" action="/predict">
+      <label for="input-text">من فضلك أدخل نص عربي</label>
+      <textarea id="input-text" name="text"></textarea>
+      <input type="submit" value="شكِّل">
+      {% if prediction %}
+      <p>النَّصُ مُشَكَّلٌ : {{ prediction }}</p>
+      {% endif %}
+      {% if error %}
+      <p class="error">{{ error }}</p>
+      {% endif %}
+    </form>
+    <script>
+    function toggleDarkMode() {
+      const body = document.querySelector('body');
+      if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('dark-mode', 'false');
+        document.querySelector('#mode-toggle').textContent = 'الوضع الليلي';
+      } else {
+        body.classList.add('dark-mode');
+        localStorage.setItem('dark-mode', 'true');
+        document.querySelector('#mode-toggle').textContent = 'الوضع النهاري';
+      }
+    }
+    </script>
+  </body>
+</html>
